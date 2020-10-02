@@ -24,7 +24,7 @@ render() {
           <div>
             <ul>
               <li>
-                  <h3>This is a:</h3>{p.choices = this.state.choices === true ? "Boast":"Roast"},
+                  <h3>This is a:</h3>{p.choices ? "Boast":"Roast"},
                   <h3>Message:</h3>{p.body},
                   <h3>Upvote:</h3>{p.upvote},
                   <h3>Downvote:</h3>{p.downvote},
