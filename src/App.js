@@ -62,15 +62,21 @@ SeeAll = () => {
 
 }
 UpvoteView = (id) => {
-  fetch("http://127.0.0.1:8000/api/roastboast/" + id + "/upvote/")
+  fetch("http://127.0.0.1:8000/api/roastboast/" + id + "/upvote/",{
+    method: "POST",
+    headers: { "Content-Type": "application/json"}})
   .then(res => res.json())
-  .then(data => this.forceUpdate(this.componentDidMount))
-console.log(id)}
+  .then((res) => {});
+  window.location.reload()
+}
 
 DownvoteView = (id) => {
-  fetch("http://127.0.0.1:8000/api/roastboast/" + id + "/downvote/")
+  fetch("http://127.0.0.1:8000/api/roastboast/" + id + "/downvote/",{
+    method: "POST",
+    headers: { "Content-Type": "application/json"}})
   .then(res => res.json())
-  .then(data => this.forceUpdate(this.componentDidMount))
+  .then((res) => {});
+  window.location.reload()
 }
 
 render() {
