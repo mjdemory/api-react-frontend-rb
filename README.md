@@ -1,3 +1,7 @@
+Author: Michael DeMory
+Helped by: Zac Gerber, Lori Henderson, Detrich, Peter demo, Cesaly Garrett, Kevin Blout.
+Backend repo link: https://github.com/mjdemory/api-react-backend-rb
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
